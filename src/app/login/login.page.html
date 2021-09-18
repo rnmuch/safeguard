@@ -1,0 +1,34 @@
+<ion-content class="ion-no-padding">
+  <div id="sign-in-button"></div>
+
+  <div class="main">
+    <ion-card no-margin>
+      <ion-card-content>
+        <ion-row class="row">
+          <div class="fire-logo">
+            <img src="../../assets/logo.jpg" class="img-logo">
+            <ion-text class="ion-padding">
+              <h2 class="ion-no-margin ion-margin-vertical ion-text-center">Customer Portal</h2>
+            </ion-text>
+          </div>
+        </ion-row>
+        <ion-grid class="phoneAuthGrid">
+          <ion-row>
+            
+            <ion-col size="12">
+              <ion-input clearInput type="test" placeholder="Enter your username" [(ngModel)]="username"
+                class="input ion-padding-horizontal" clear-input="true"></ion-input>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button expand="block" (click)="signin()" color="undefined"
+                class="btn-transition">
+                Sign in </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
