@@ -24,7 +24,8 @@ export class LoginPage implements OnInit {
   async signin(){
     console.log(this.username);
     
-    if(this.username == "gilbert"){
+    if(this.username == "gilbert")
+    {
       await this.storage.set('service', 'Premium Response Services');
       await this.storage.set('name', 'Gilbert Mupande');
       await this.storage.set('address', '56 Samora Machel , HRE , ZW');
@@ -32,10 +33,11 @@ export class LoginPage implements OnInit {
       await this.storage.set('phone', '+263 77 242 3623');
       this.navCtrl.navigateForward('/home')
     }
-    else if(this.username == "masimba"){
+    else if(this.username == "masimba")
+    {
       await this.storage.set('service', 'Standard Response Services');
       await this.storage.set('name', 'Mr Masimba');
-      await this.storage.set('address', '56 Samora Machel , HRE , ZW');
+      await this.storage.set('address', '56 Leopold Takawira , HRE , ZW');
       await this.storage.set('amount', '$ 330');
       await this.storage.set('phone', '+263 77 348 1057');
       this.navCtrl.navigateForward('/home')
@@ -43,7 +45,7 @@ export class LoginPage implements OnInit {
     else if(this.username == "mupande"){
       await this.storage.set('service', 'Lite Response Services');
       await this.storage.set('name', 'Mr Mupande');
-      await this.storage.set('address', '56 Samora Machel , HRE , ZW');
+      await this.storage.set('address', '67 Nelson Mandela, HRE , ZW');
       await this.storage.set('amount', '$ 100');
       await this.storage.set('phone', '+263 77 242 3623');
       this.navCtrl.navigateForward('/home')
